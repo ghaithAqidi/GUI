@@ -5,13 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BabyNames"
         mc:Ignorable="d"
-        Title="Baby names yeah!" Height="350" Width="525">
+        Title="Baby names yeah!" Height="464.944" Width="525">
 
     <Grid>
         <ListBox x:Name="Decades" HorizontalAlignment="Left" Margin="5,31,0,0" VerticalAlignment="Top" Height="175" Width="146" SelectionChanged="Decades_SelectionChanged" />
         <ListBox x:Name="ListDecadeTopNames" HorizontalAlignment="Left" Height="175" Margin="156,31,0,0" VerticalAlignment="Top" Width="278"/>
         <Label x:Name="label" Content="Decades" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy" Content="Top 10 baby names in selected decade" HorizontalAlignment="Left" Margin="156,5,0,0" VerticalAlignment="Top"/>
+        <GroupBox x:Name="groupBox" Header="Search" HorizontalAlignment="Left" Margin="5,206,0,0" VerticalAlignment="Top" Height="216" Width="499">
+            <Grid>
+
+                <Label x:Name="Name" Content="Name" HorizontalAlignment="Left" Margin="42,27,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label2" Content="Average Ranking" HorizontalAlignment="Left" Margin="42,60,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label3" Content="Trend" HorizontalAlignment="Left" Margin="51,94,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label4" Content="Year" HorizontalAlignment="Left" Margin="307,18,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label5" Content="Rank" HorizontalAlignment="Left" Margin="360,18,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="NameBox" HorizontalAlignment="Left" Height="23" Margin="88,31,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                <ListBox x:Name="YearRankBox" HorizontalAlignment="Left" Height="134" Margin="307,49,0,0" VerticalAlignment="Top" Width="170"/>
+                <Button x:Name="SerachButton" Content="Search" HorizontalAlignment="Left" Margin="96,147,0,0" VerticalAlignment="Top" Width="75" Click="SerachButton_Click"/>
+                <Label x:Name="RankResLabel" Content="" HorizontalAlignment="Left" Margin="160,60,0,0" VerticalAlignment="Top" Width="48"/>
+                <Label x:Name="TrendResLabel" Content="" HorizontalAlignment="Left" Margin="160,94,0,0" VerticalAlignment="Top" Width="48"/>
+
+            </Grid>
+        </GroupBox>
 
 
     </Grid>
