@@ -5,11 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BabyNames"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Baby names yeah!" Height="350" Width="525">
 
     <Grid>
-        <ListBox x:Name="Decades" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top" Height="175" Width="146" />
-        <ListBox x:Name="ListDecadeTopNames" HorizontalAlignment="Left" Height="175" Margin="156,10,0,0" VerticalAlignment="Top" Width="278" DisplayMemberPath="m_name" />
+        <ListBox x:Name="Decades" HorizontalAlignment="Left" Margin="5,31,0,0" VerticalAlignment="Top" Height="175" Width="146" SelectionChanged="Decades_SelectionChanged" />
+        <ListBox x:Name="ListDecadeTopNames" HorizontalAlignment="Left" Height="175" Margin="156,31,0,0" VerticalAlignment="Top" Width="278"/>
+        <Label x:Name="label" Content="Decades" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="Top 10 baby names in selected decade" HorizontalAlignment="Left" Margin="156,5,0,0" VerticalAlignment="Top"/>
 
 
     </Grid>
